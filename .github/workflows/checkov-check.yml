@@ -21,4 +21,4 @@ jobs:
         uses: actions/checkout@v3
       - name: scan
         run: |
-            checkov --directory $GITHUB_WORKSPACE -o cli --output-file-path console --skip-check CKV2_GHA_1
+            checkov --directory $GITHUB_WORKSPACE -o cli -o junitxml –output-file-path console,results.xml --skip-check CKV2_GHA_1
