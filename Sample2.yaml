@@ -1,0 +1,11 @@
+apiVersion: v3
+
+kind: Pod
+
+metadata:
+
+  name: rss-site
+
+  labels:
+
+    app: web
