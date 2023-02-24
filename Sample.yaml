@@ -11,13 +11,3 @@ spec:
       containers:
       - name: foobar
         image: foo:bar
----
-apiVersion: policy/v1beta1
-kind: PodDisruptionBudget
-metadata:
-  name: app-budget
-spec:
-  minAvailable: 2
-  selector:
-    matchLabels:
-      app: not-foo
